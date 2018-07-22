@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        swooshLbl.frame = CGRect(x: view.frame.size.width / 2 - swooshLbl.frame.size.width / 2, y: 50, width: swooshLbl.frame.size.width, height: swooshLbl.frame.size.height)
+        
+        bgImg.frame = view.frame
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var swooshLbl: UIImageView!
+    @IBOutlet weak var bgImg: UIImageView!
 
+    
+    
 }
 
